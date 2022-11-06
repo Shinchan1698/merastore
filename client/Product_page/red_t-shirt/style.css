@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: title;
+    src: url(Diranista-Regular.otf);
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #8e9eab 0%, #eef2f3 );
+    position: relative;
+}
+
+
+.bg{
+    background: linear-gradient(to right, #3e5151 0%, #decba4 );
+}
+
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 250px;
+    padding-right: 100px;
+}
+.nav{
+     display: flex;
+     align-items: center;
+}
+
+.name{
+    font-family: title;
+    font-size: 3em;
+    color: aliceblue;
+    
+}
+
+nav{
+    flex: 1;
+    text-align: center;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #555;
+}
+
+i{
+    font-size: 20px;
+}
+
+.rows{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+h3{
+    padding-top: 20px;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+.cols-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.cols-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.cols-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.cols-2 a .btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+}
+
+.cols-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+
+.cols-4 img{
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.5s;
+}
+
+h4{
+    color: #555;
+    font-weight: small;
+}
+
+.cols-4 p{
+    font-size: 14px;
+}
+
+.rating .fa{
+    color: #ff523b;
+}
+
+.cols-4:hover{
+transform: translateY(-5px);
+}
+
+
+.rows-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+select{
+    border: 1px solid #ff523b;
+    padding: 5px;
+}
+
+
+select:focus{
+    outline: none;
+}
+
+
+.page-btn{
+    margin: 0 auto 80px;
+}
+
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.page-btn a{
+    text-decoration: none;
+    color: #555;
+}
+
+.page-btn span:hover{
+    background: #ff523b;
+    color: #fff;
+}
+
+
+div .dropdown-menu{
+    font-size: small;
+    margin-right: 50px;
+}
+
+div .dropdown-menu input{
+    border-color: orange;
+    color: rgb(184, 89, 89);
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-left: 18px;
+    margin-top: 5px;
+}
+
+.button a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+}
+
+.info{
+    position: absolute;
+    top: 30%;
+    color: #fff;
+    margin-left: 200px;
+    font-size: 2em;
+    letter-spacing: 1px;
+    padding: 50px 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+}
+
+.icon{
+    display: flex;
+}
+
+.icon .dropdown-menu{
+    display: none;
+}
+
+.modal-dialog{
+    height: 150px !important;
+}
+
+.search-box{
+    padding-right: 50px;
+}
+
+.search-box form{
+    background: #fff;
+    height: 50px;
+    display: flex;
+}
+
+form input{
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+form .button1{
+    background: tomato;
+    border: none;
+    outline: none;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+form .fa-search{
+    align-self: center;
+    padding: 5px 10px;
+}
+
+
+
+.footer{
+    height: 200px;
+    width: 300px;
+}
+
+
+.footer ul{
+    list-style-type: none;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer .head{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+}
+
+p{
+    color: #555;
+}
+
+.button1{
+    font-size: 16px;
+    padding: 3px 16px;
+    background-color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    margin-top: 10px;
+    border: none;
+}
+
+#email{
+    margin-top: 10px;
+    height: 40px;
+    border: none;
+}
+
+.foot{
+    display: flex;
+    padding-left: 200px;
+    padding-right: 200px;
+    height: 50px;
+    background-color: antiquewhite;
+}
+
+.foot .ele{
+    width: 700px;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.foot .ele i{
+    font-size: 30px;
+    padding: 10px;
+}
+
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.grid_container{
+    display: grid;
+    background: linear-gradient(to right, #3e5151 0%, #decba4 );
+    grid-template-columns: 270px 270px 270px 270px 270px;
+    color: #fff;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.single-product{
+    margin-top: 80px;
+}
+
+.single-product .cols-2 img{
+    padding: 0;
+}
+
+.single-product .cols-2 {
+    padding: 20px;
+}
+
+.single-product h4{
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff532b;
+    margin-top: 20px;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+
+@media only screen and (max-width:600px){
+    .rows{
+        text-align: center;
+    }
+    .cols-2 .cols-4{
+        flex-basis: 100%;
+    }
+    .single-product .rows{
+        text-align: left;
+    }
+    .single-product .cols-2{
+        padding: 20px 0;
+    }
+}
